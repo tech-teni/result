@@ -13,7 +13,6 @@ h1{
 margin-bottom: 0cm;
 }
 .sch-info{
-/* height: 80px; */
 border: 0;
 border: 2px solid var(--borderColor);
 margin-top: 0;
@@ -23,7 +22,7 @@ display: flex;
 .sch-info tr, 
 .sch-info td,
 .sch-info th {
-  border:2px solid rgb(177, 174, 174);
+  border:2px solid var(--borderColor);
   border-bottom: 0;
   padding-left: 10px;
 
@@ -34,9 +33,7 @@ display: flex;
     align-items: center;
 
 }
-/* .sch-logo{
-    border-right: 2px solid var(--borderColor);
-} */
+
 .main{
     border: 5px solid black;
     padding: 0;
@@ -52,7 +49,6 @@ h2{
     color: white;
     background-color: var(--pryColor);
     margin: 0;
-    border: 2px solid var(--borderColor);
     border-bottom: 0;
     border-top: 0;
     font-size: 18px;
@@ -83,52 +79,27 @@ h2{
 height: 30px;
 /* border: none; */
 }
+.column-1 table td,
+.column-2 table td,
 .column-1 table th,
 .column-2 table th
 {
-padding-left: 10px;
+height: 30px;
 border: none;
-
 }
-.column-1 table td,
-.column-2 table td
-{
-padding-left: 10px;
-border: none;
-padding-right: 20px;
-
-}
- 
 
 .column-1{
-/* border-right: 1px solid var(--borderColor); */
-}
+border: none;}
 .column-2{
-    /* border-left: 1px solid var(--borderColor); */
-    } 
- .column-1 p,
-.column-2 p{
-    /* padding: 5px;
-    padding-left: 15px;
-    margin: 0;
-    font-size: 15px;
-    font-weight: bolder;
-    border: 2px solid var(--borderColor);
-    border-left: 0;
-    border-right: 0;
-    border-bottom: 0;
-    height: 3rem;
-    color: black; */
-}
+border: none;    } 
+
 
 .column-1 span,
 .column-2 span{
     font-weight: bold;
     font-size: 15px;
 }
-/* hr{
-    border: 1px solid black;
-}  */
+
 .bio-position{
     position: relative;
     margin-top: 0;
@@ -181,7 +152,6 @@ table{
 
 .divider thead{
 display: flex;
-/* align-items: center; */
 justify-content: space-around;
 border: none;
 }
@@ -196,6 +166,7 @@ border: none;
     display: flex;
     width: 100%;
     border: 2px solid var(--borderColor);
+    margin-bottom: 0;
 }
 
 .grad-1, .grad-2{
@@ -211,10 +182,6 @@ margin-left: 5px;
     border-top: 0;
 }
 
-.key-affec p{
-    /* border-bottom: 2px solid var(--borderColor); */
-    border-top: 0;
-margin-left: 10px;}
 .principal-comment{
     border: 2px solid var(--borderColor);
     border-top: 0;
@@ -261,3 +228,51 @@ button{
 
 
 
+@media screen and (max-width: 445px){
+    h1{
+        font-size: 15px;
+        margin-top: 15px;
+    }
+    h2{
+        font-size: 15px;
+   
+    }
+    .ashed, 
+    .address{
+        font-size: 10px;
+ 
+    }
+    .column-1 th,
+    .column-2 th,
+    .column-1 td,
+    .column-2 td,
+    .ruled th,
+    .ruled td,
+    .divider th,
+    .divider td
+    {
+        font-size: 11px;
+        font-weight: bolder;
+    }
+ 
+    .divider tr{
+        font-size: 11px;
+    }
+
+    .bio-position img{
+        width: 50px;
+    }
+  p{
+    font-size: 11px;
+  
+  }
+  .principal-comment h4{
+    font-size: 13px;
+
+    }
+    button{
+        width: 70px;
+        font-size: 13px;
+        height: 40px;
+    }
+}

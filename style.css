@@ -1,6 +1,6 @@
 :root{
-    --pryColor: rgb(10, 36, 153);
-    --secColor: rgb(218, 130, 15);
+    --pryColor: rgb(139, 56, 0);
+    --secColor: rgb(179, 174, 174);
     --headingFont: 15px;
     --borderColor: rgb(146, 146, 146);
 
@@ -234,6 +234,31 @@ button{
 .column-2 th{
 width: 65%; 
 }
+
+
+.finger-1,
+.finger-2{
+    display: flex;
+}
+
+.design-1{
+width: 50%;
+border: 2px solid var(--borderColor);
+}
+
+.design-2{
+    width: 50%;
+    margin-left: 5px;
+    border: 2px solid var(--borderColor);
+
+}
+
+
+
+
+
+
+
 
 
 

@@ -231,7 +231,9 @@ button{
     text-align: center;
 }
 
-
+.column-2 th{
+width: 65%; 
+}
 
 
 
@@ -262,7 +264,9 @@ button{
     .ruled th,
     .ruled td,
     .divider th,
-    .divider td
+    .divider ,
+    .word-grad th,
+    .word-grad  td 
     {
         font-size: 11px;
         font-weight: bolder;
@@ -289,9 +293,11 @@ button{
         height: 40px;
     }
     .column-1 table td,
-.column-2 table td,
-.column-1 table th,
-.column-2 table th
-{
-    padding-left: 5px;}
+    .column-2 table td,
+    .column-1 table th,
+    .column-2 table th
+    {
+        padding-left: 5px;
+    }
+
 }

@@ -291,7 +291,10 @@ border: 2px solid var(--borderColor);
     .divider th,
     .divider ,
     .word-grad th,
-    .word-grad  td 
+    .word-grad  td ,
+    .new-design th,
+    .new-design td
+
     {
         font-size: 11px;
         font-weight: bolder;
